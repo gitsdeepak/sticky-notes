@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: 
+      linear-gradient(to right, #ddd 1px, transparent 1px),
+      linear-gradient(to bottom, #ddd 1px, transparent 1px);
+    background-size: 20px 20px; /* Grid size */
+    background-color: #fff;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Section */
+  form {
+    margin-bottom: 30px;
+  }
+  
+  textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+  }
+  
+  input[type="color"] {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Fork and Follow Buttons */
+  .fork-button, .follow-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 5px;
+    text-decoration: none;
+  }
+  
+  .fork-button:hover, .follow-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Wall (Sticky Notes Container) */
+ /* #wall {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+*/
+  /* Wall (Sticky Notes Container) */
+#wall {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 300px;
+    border: 1px solid #ddd;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  }
+  
+  
+  /* Sticky Note Styles */
+  .note {
+    background-color: #fdfd96;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    min-height: 150px;
+    position: relative;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .note button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .note button:hover {
+    background-color: #e03939;
+  }
+  
+  /* Note Input Color */
+  input[type="color"] {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    textarea {
+      width: 90%;
+      height: 80px;
+    }
+  
+    #wall {
+      padding: 10px;
+    }
+  
+    .note {
+      width: 150px;
+      min-height: 120px;
+    }
+  }
+  

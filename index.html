@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Wall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Community Wall!</h1>
+    <p>This is a place where you can post your messages, customize your sticky notes, and contribute to the project. Fork the repository, make improvements, and follow me on GitHub for future updates!</p>
+    
+    <a href="https://github.com/username/community-wall/fork" target="_blank">
+      <button class="fork-button">Fork This Repository</button>
+    </a>
+    
+    <a href="https://github.com/username" target="_blank">
+      <button class="follow-button">Follow Me on GitHub</button>
+    </a>
+    
+    <form id="noteForm">
+      <textarea id="noteInput" placeholder="Write your message..."></textarea>
+      <input type="color" id="noteColor" value="#fdfd96">
+      <button type="submit">Add Note</button>
+    </form>
+    <div id="wall"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
